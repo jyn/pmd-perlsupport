@@ -25,15 +25,15 @@ build and install Perl support for PMD.
 Install the above prerequisites. Make sure you take note of where PMD is
 installed.
 
-'''shell
+```shell
 cd <pmd location>
 mkdir custom
 cd custom
-git clone http://github.com/jyn/pmd-cpd-perl
+git clone https://github.com/jyn/pmd-perlsupport.git
 cd pmd-cpd-perl
 mvn package
 cp target/pmd-cpd-perl-1.0.SNAPSHOT.jar ../lib/.
 cd ../bin
 ./run.sh cpd --minimum-tokens 100 --files <path to perl code> --language Perl
-'''
+```
 
